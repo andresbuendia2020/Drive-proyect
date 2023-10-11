@@ -1,0 +1,15 @@
+.mi-card{
+  display:flex;
+  justify-content: space-between;
+}
+
+.mi-badge-jugado{
+  padding: 8px !important;
+  background-color: green;
+}
+
+.mi-badge-pendiente{
+  padding:8px !important;
+  color: white;
+  background-color: gray;
+}
