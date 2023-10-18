@@ -18,7 +18,7 @@ const sidebarnav = [
   {
     component: CNavItem,
     name: 'Mi Unidad',
-    to: '/theme/colors',
+    to: '/miunidad',
     icon: <CIcon icon={cilStorage} customClassName="nav-icon" />,
     badge: {
       color: 'info',
@@ -41,7 +41,7 @@ const sidebarnav = [
   {
     component: CNavItem,
     name: 'Papelera',
-    href: 'https://coreui.io/react/docs/templates/installation/',
+    to: '/papelera',
     icon: <CIcon icon={cilTrash} customClassName="nav-icon" />,
   },
 ]

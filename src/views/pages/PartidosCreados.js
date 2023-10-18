@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react"
-// import axios from "axios"
-// import { PARTIDOSCREADOS_GET_ENDPOINT } from "../../connections/helpers/endpoints";
+import axios from "axios"
+import { PARTIDOSCREADOS_GET_ENDPOINT } from "../../connections/helpers/endpoints";
 import { CContainer , CCardBody, CRow, CCol } from '@coreui/react'
 import { PartidoCard } from "../../components/PartidosCreados/PartidoCard";
 import partidosCreados from '../../connections/datapartidoscreados'; 
@@ -12,14 +12,14 @@ const PartidosCreados= ()=>{
     const [buscando, setBuscando] = useState(true);
 
     useEffect(()=>{
-        // axios.get(PARTIDOSCREADOS_GET_ENDPOINT)
-        // .then(respuesta => {
-        //     setPartidos(respuesta.data);
-        //     setBuscando(false);
-        // }).catch(err => {
-        //     console.error(err);
-        //     setBuscando(false);
-        // })
+        axios.get(PARTIDOSCREADOS_GET_ENDPOINT)
+        .then(respuesta => {
+            setPartidos(respuesta.data);
+            setBuscando(false);
+        }).catch(err => {
+            console.error(err);
+            setBuscando(false);
+        })
 
         setPartidos(partidosCreados);
         setBuscando(false);

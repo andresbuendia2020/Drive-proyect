@@ -9,7 +9,7 @@ const AppContent = () => {
   return (
     <CContainer lg>
       <Suspense fallback={<CSpinner color="primary" />}>
-        {/*<Routes>
+        <Routes>
           {routes.map((route, idx) => {
             return (
               route.element && (
@@ -21,11 +21,12 @@ const AppContent = () => {
                   element={<route.element />}
                 />
               )
+              
             )
           })}
           <Route path="/" element={<Navigate to="/partidoscreados" replace />} />
-        </Routes>*/}
-        <div class="list-group">
+        </Routes>
+        {/* <div class="list-group">
             <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
               <CIcon icon={cilDescription} size="lg" /> The current link item
             </a>
@@ -56,7 +57,7 @@ const AppContent = () => {
             <a href="#" class="list-group-item list-group-item-action">
               <CIcon icon={cilDescription} size="lg" /> A 9th link item
             </a>
-        </div>
+        </div> */}
       </Suspense>
     </CContainer>
   )
