@@ -1,15 +1,29 @@
+import '../assets/css/App.css';
+import '../scss/style.scss'
+import React, {Suspense } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import {store} from '../states/store'
 
-import '../css/App.css';
-import Navegacion from "../layouts/Navegacion.js"
-import {DocumentosCreados} from "../pages/DocumentosCreados"
-import { BrowserRouter } from 'react-router-dom';
+const DefaultLayout = React.lazy(() => import('../layout/DefaultLayout'))
+
+const loading = (
+  <div className="pt-3 text-center">
+    <div className="sk-spinner sk-spinner-pulse"></div>
+  </div>
+)
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navegacion />
-      <DocumentosCreados />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Suspense fallback={loading}>
+          <Routes>
+            <Route path="*" name="Home" element={<DefaultLayout />} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
+    </Provider>
   );
 }
 
