@@ -28,7 +28,7 @@ const Papelera= ()=>{
     return (
         <CContainer  className="mt-3 mb-3">
 					
-                    <h3 className="text-center">Papelera</h3>
+                  <h3 className="text-center">Papelera</h3>
             <CRow className="">
                 <CCol sm="12" md="8" lg="12">
                     <CCardBody>

@@ -25,19 +25,19 @@ const sidebarnav = [
       text: 'NEW',
     }
   },
-  {
-    component: CNavGroup,
-    name: 'Reciente',
-    to: '/base',
-    icon: <CIcon icon={cilFire} customClassName="nav-icon" />,
-    items: [
-      {
-        component: CNavItem,
-        name: 'Accordion',
-        to: '/base/accordion',
-      }
-    ],
-  },
+  // {
+  //   component: CNavGroup,
+  //   name: 'Reciente',
+  //   to: '/base',
+  //   icon: <CIcon icon={cilFire} customClassName="nav-icon" />,
+  //   items: [
+  //     {
+  //       component: CNavItem,
+  //       name: 'Accordion',
+  //       to: '/base/accordion',
+  //     }
+  //   ],
+  // },
   {
     component: CNavItem,
     name: 'Papelera',

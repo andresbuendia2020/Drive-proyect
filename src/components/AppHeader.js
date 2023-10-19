@@ -39,17 +39,7 @@ const AppHeader = () => {
           </div>
         </CHeaderBrand>
         <CHeaderNav className="d-none d-md-flex me-auto">
-          {/*<CNavItem>
-            <CNavLink to="/" component={NavLink}>
-              Home
-            </CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="#">Users</CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="#">Settings</CNavLink>
-          </CNavItem>*/}
+          {}
           <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button class="btn btn-outline-success" type="submit">Search</button>
